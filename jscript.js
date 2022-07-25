@@ -59,25 +59,53 @@
 //         ]
 //     )
 
-//Deep nesting Easter egg
-function functionA(){
-    function functionB() {
-        function functionC() {
-            function functionD() {
-                console.log("This is function D");
-            }
-            console.log("This is function C");
-            functionD();
-            console.log("Logged under functionD call");
-        }
-        console.log("This is function B");
-        functionC();
-        console.log("Logged under functionC cal");
-    }
-    console.log("This is function A");
-    functionB();
-    console.log("Logged under functionB call");
+//Deep nesting Easter egg - So how does it work?
+// function functionA(){
+//     function functionB() {
+//         function functionC() {
+//             function functionD() {
+//                 console.log("This is function D");
+//             }
+//             console.log("This is function C");
+//             functionD();
+//             console.log("Logged under functionD call");
+//         }
+//         console.log("This is function B");
+//         functionC();
+//         console.log("Logged under functionC cal");
+//     }
+//     console.log("This is function A");
+//     functionB();
+//     console.log("Logged under functionB call");
+// }
+// console.log("Logged above functionA call");
+// functionA();
+// console.log("Logged under functionA call");
+
+//tektutorialshub - 
+// function addNum(a, b){
+//     function logToConsole(message){         //nested function
+//         console.log(message);
+//     }
+//     let result = a + b;
+//     logToConsole("result is " + result)     //invoke nested function
+// }
+//     addNum(1, 2);                           //invoke outer function 
+//     logToConsole("10"s)                      //**but cannot invoke inner function**
+
+function makeCounter() {
+    let count = 0;
+
+    increment = function(){
+        return ++count;
+    };
+
+    return increment;
 }
-console.log("Logged above functionA call");
-functionA();
-console.log("Logged under functionA call");
+
+counter = makeCounter()                         //stores the nested function
+
+console.log(counter());                         //invokes the nested function and increments count
+console.log(counter());
+console.log(counter());
+console.log(counter());
