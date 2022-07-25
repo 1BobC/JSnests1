@@ -93,6 +93,24 @@
 //     addNum(1, 2);                           //invoke outer function 
 //     logToConsole("10"s)                      //**but cannot invoke inner function**
 
+// function makeCounter() {
+//     let count = 0;
+
+//     increment = function(){
+//         return ++count;
+//     };
+
+//     return increment;
+// }
+
+// counter = makeCounter()                         //stores the nested function
+
+// console.log(counter());                         //invokes the nested function and increments count
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+//addCounter
 function makeCounter() {
     let count = 0;
 
@@ -103,9 +121,15 @@ function makeCounter() {
     return increment;
 }
 
-counter = makeCounter()                         //stores the nested function
+counter1 = makeCounter()                         //stores the nested function
+counter2 = makeCounter()
 
-console.log(counter());                         //invokes the nested function and increments count
-console.log(counter());
-console.log(counter());
-console.log(counter());
+console.log(counter1());                         //invokes the nested function and increments count
+console.log(counter1());
+console.log(counter1());
+console.log(counter1());
+
+console.log(counter2());                         //invokes the nested function and increments count
+console.log(counter2());
+console.log(counter2());
+console.log(counter2());

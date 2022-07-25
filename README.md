@@ -5,3 +5,4 @@ Essential practise with JS nested functions
 "code box - Basic example works ok, Practical example works ok, Easter egg also works fine but will need to play with it to figure out how it displays the way it does!"
 
 "tektutorialshub - addNum example works ok, makeCounter example works ok,"
+"Collaborator addCounter works ok"
