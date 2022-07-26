@@ -132,4 +132,6 @@ console.log(counter1());
 console.log(counter2());                         //invokes the nested function and increments count
 console.log(counter2());
 console.log(counter2());
-console.log(counter2());<p>addCounter</p>
+console.log(counter2());
+
+
