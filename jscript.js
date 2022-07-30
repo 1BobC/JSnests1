@@ -111,27 +111,40 @@
 // console.log(counter());
 
 //addCounter
-function makeCounter() {
-    let count = 0;
+// function makeCounter() {
+//     let count = 0;
 
-    increment = function(){
-        return ++count;
+//     increment = function(){
+//         return ++count;
+//     };
+
+//     return increment;
+// }
+
+// counter1 = makeCounter()                         //stores the nested function
+// counter2 = makeCounter()
+
+// console.log(counter1());                         //invokes the nested function and increments count
+// console.log(counter1());
+// console.log(counter1());
+// console.log(counter1());
+
+// console.log(counter2());                         //invokes the nested function and increments count
+// console.log(counter2());
+// console.log(counter2());
+// console.log(counter2());
+
+//return inner function
+function outerfunc(a) {
+    innerFunc = function(b) {
+        console.log("a %d b %d", a,b)
     };
-
-    return increment;
+    return innerFunc;
 }
 
-counter1 = makeCounter()                         //stores the nested function
-counter2 = makeCounter()
+InnerFunc = outerfunc(5);       //get Inner Function
+InnerFunc(3);                   //Invoke Inner Function
 
-console.log(counter1());                         //invokes the nested function and increments count
-console.log(counter1());
-console.log(counter1());
-console.log(counter1());
-
-console.log(counter2());                         //invokes the nested function and increments count
-console.log(counter2());
-console.log(counter2());
-console.log(counter2());
+outerfunc(10)(2);               //Invoke Inner Function directly
 
 
