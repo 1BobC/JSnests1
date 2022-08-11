@@ -135,16 +135,32 @@
 // console.log(counter2());
 
 //return inner function
-function outerfunc(a) {
-    innerFunc = function(b) {
-        console.log("a %d b %d", a,b)
-    };
-    return innerFunc;
+// function outerfunc(a) {
+//     innerFunc = function(b) {
+//         console.log("a %d b %d", a,b)
+//     };
+//     return innerFunc;
+// }
+
+// InnerFunc = outerfunc(5);       //get Inner Function
+// InnerFunc(3);                   //Invoke Inner Function
+
+// outerfunc(10)(2);               //Invoke Inner Function directly
+
+let up = document.getElementById('GFG_UP');
+let down = document.getElementById('GFG_DOWN');
+up.innerHTML = 
+"Click on the button to call nested function.";
+function fun1(a) {
+function fun2(b) {
+return a + b;
 }
-
-InnerFunc = outerfunc(5);       //get Inner Function
-InnerFunc(3);                   //Invoke Inner Function
-
-outerfunc(10)(2);               //Invoke Inner Function directly
+return fun2;
+} 
+function GFG_Fun() {
+down.innerHTML = 
+fun1("An Online Computer Science Portal")
+(" Geeks for Geeks");
+}
 
 

@@ -14,3 +14,7 @@ p{
 table{
     color: darkgrey;
 }
+button{
+    display:block;
+    margin: auto;
+    }
