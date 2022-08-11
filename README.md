@@ -6,4 +6,6 @@ Essential practise with JS nested functions
 
 "tektutorialshub - addNum example works ok, makeCounter example works ok,"
 "Collaborator addCounter works ok"
-"Collaborator 1roco add return inner function"
+"Collaborator 1roco add return inner function, works ok"
+
+"Geeks for Geeks Collaborator added first example - works ok"
