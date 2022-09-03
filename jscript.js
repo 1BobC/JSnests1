@@ -147,20 +147,32 @@
 
 // outerfunc(10)(2);               //Invoke Inner Function directly
 
-let up = document.getElementById('GFG_UP');
-let down = document.getElementById('GFG_DOWN');
-up.innerHTML = 
-"Click on the button to call nested function.";
-function fun1(a) {
-function fun2(b) {
-return a + b;
-}
-return fun2;
-} 
-function GFG_Fun() {
-down.innerHTML = 
-fun1("An Online Computer Science Portal")
-(" Geeks for Geeks");
-}
+// let up = document.getElementById('GFG_UP');
+// let down = document.getElementById('GFG_DOWN');
+// up.innerHTML = 
+// "Click on the button to call nested function.";
+// function fun1(a) {
+// function fun2(b) {
+// return a + b;
+// }
+// return fun2;
+// } 
+// function GFG_Fun() {
+// down.innerHTML = 
+// fun1("An Online Computer Science Portal")
+// (" Geeks for Geeks");
+// }
 
-
+var up = document.getElementById('GFG_UP');
+            var down = document.getElementById('GFG_DOWN');
+            up.innerHTML = 
+                 "Click on the button to call nested function.";     
+            function fun1(a) {  
+              fun = function fun2(b) { 
+                return a + b;
+              }
+              return fun;
+            }
+            function GFG_Fun() {
+                down.innerHTML = fun1("This is ")("GeeksforGeeks");
+            } 
