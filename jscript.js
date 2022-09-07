@@ -163,16 +163,33 @@
 // (" Geeks for Geeks");
 // }
 
-var up = document.getElementById('GFG_UP');
-var down = document.getElementById('GFG_DOWN');
-up.innerHTML = 
-"Click on the button to call nested function."; 
-function fun1(a) { 
-fun = function fun2(b) { 
-return a + b;
-}
-return fun;
-}
-function GFG_Fun() {
-down.innerHTML = fun1("This is ")("GeeksforGeeks");
-} 
+// var up = document.getElementById('GFG_UP');
+// var down = document.getElementById('GFG_DOWN');
+// up.innerHTML = 
+// "Click on the button to call nested function."; 
+// function fun1(a) { 
+// fun = function fun2(b) { 
+// return a + b;
+// }
+// return fun;
+// }
+// function GFG_Fun() {
+// down.innerHTML = fun1("This is ")("GeeksforGeeks");
+// } 
+
+//Linux eyehunts jscode nested functions examples
+function f1() {
+    let c = 0; 
+    function f2() {
+    console.log(c++);
+    }
+    return f2
+    }
+    let d = f1();
+    d();
+    d();
+    d();
+    let e = f1();
+    e();
+    e();
+    
