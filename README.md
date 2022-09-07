@@ -9,3 +9,5 @@ Essential practise with JS nested functions
 "Collaborator 1roco add return inner function, works ok"
 
 "Geeks for Geeks Collaborator added first example - works ok"
+"Correcting collab mistake"
+""Geeks for Geeks Collaborator added second example - works ok""
