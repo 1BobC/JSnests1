@@ -13,3 +13,5 @@ Essential practise with JS nested functions
 ""Geeks for Geeks Collaborator added second example - works ok""
 
 "Linux eyehunts jscode nested functions example - works ok"
+
+"mynest1 and 2 attempts 1 works ok 2 needs more work!"
