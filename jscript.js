@@ -190,57 +190,63 @@
 // } 
 
 //Linux eyehunts jscode nested functions examples
-// function f1() {
-//     let c = 0; 
-//     function f2() {
-//     console.log(c++);
-//     }
-//     return f2
-//     }
-//     let d = f1();
-//     d();
-//     d();
-//     d();
-//     let e = f1();
-//     e();
-//     e();
+function f1() {
+    let c = 0; 
+    function f2() {
+    console.log(c++);
+    }
+    return f2
+    }
+    let d = f1();
+    d();
+    d();
+    d();
+    let e = f1();
+    e();
+    e();
     
 //mynest1 attempt
-function a() {
-    function a1() {
-        console.log("function a1 is calling...");
-        console.log("function a1 called...");
-    }
-        console.log("function a called...")
-        a1();         
-}
-     a();
-     a1();    cannot call a1 frome here!
-     result is:
-    function a called...             a() is called first
-    function a1 is calling...        a1() is called from under message 'function a called'
-    function a1 called...            continues with next message 'function a1 is called'
+// function a() {
+//     function a1() {
+//         console.log("function a1 is calling...");
+//         console.log("function a1 called...");
+//     }
+//         console.log("function a called...")
+//         a1();         
+// }
+//      a();
+    //  a1();    cannot call a1 frome here!
+    //  result is:
+    // function a called...             a() is called first
+    // function a1 is calling...        a1() is called from under message 'function a called'
+    // function a1 called...            continues with next message 'function a1 is called'
 
 //mynest2 attempt
-    function b(){
-        let x = 100;
-        function c(){
-            console.log (x--);
-        }
-        return c()
+function b(){
+    let x = 100;
+    function c(){
+    console.log(("y equals ") + (--x));
+    //--x;
     }
-        let y = c();
-        
-        y();
-        y();
-        y();
-        y();
-
-        let z = b();
-
-        z();
-        z();
-        z();
+    return c
+    }
+    let y= b();
+    //b();
+    //console.log("First y = ");
+    y();
+    //console.log("Second y = ");
+    y();
+    //console.log("Third y = ");
+    y();
+    
+    // let z = b();
+    // console.log("First z = ");
+    // z();
+    // console.log("Second z = ");
+    // z();
+    // console.log("Third z = ");
+    // z();
+    
 
 
     
