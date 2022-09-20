@@ -15,3 +15,4 @@ Essential practise with JS nested functions
 "Linux eyehunts jscode nested functions example - works ok"
 
 "mynest1 and 2 attempts 1 works ok 2 needs more work!"
+"ok found it, should have been ret c not retc()"
